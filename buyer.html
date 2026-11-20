@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Buyer Dashboard | Vintage Rides
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body id="page-buyer">
+  <header id="navbar">
+   <div class="container">
+    <div class="logo">
+     <a href="index.html">
+      Vintage Rides
+     </a>
+    </div>
+    <nav aria-label="Main navigation">
+     <button aria-controls="main-navigation" aria-expanded="false" id="mobile-nav-toggle">
+      <i class="fas fa-bars">
+      </i>
+     </button>
+     <ul id="main-navigation">
+      <li>
+       <a href="index.html">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="cars.html">
+        Cars
+       </a>
+      </li>
+      <li>
+       <a href="compare.html">
+        Compare
+       </a>
+      </li>
+      <li>
+       <a href="about.html">
+        About Us
+       </a>
+      </li>
+      <li>
+       <a href="contact.html">
+        Contact
+       </a>
+      </li>
+      <li>
+       <a href="login.html">
+        Login / Register
+       </a>
+      </li>
+      <li>
+       <a href="cart.html">
+        Cart (
+        <span id="cart-item-count">
+         0
+        </span>
+        )
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <main class="section section-light" id="buyer-dashboard">
+   <div class="container">
+    <div class="crud-toolbar">
+     <div>
+      <h1>
+       Buyer Dashboard
+      </h1>
+      <p>
+       Manage your profile, saved searches and orders.
+      </p>
+     </div>
+     <button class="btn btn-outline-dark" data-logout="">
+      Log out
+     </button>
+    </div>
+    <section class="crud-panel">
+     <h2>
+      My Profile
+     </h2>
+     <div id="buyer-profile">
+     </div>
+    </section>
+    <section class="crud-panel">
+     <h2>
+      Save a Search
+     </h2>
+     <form class="inline-actions" data-backend-form="" id="save-search-form">
+      <input class="form-control" name="term" placeholder="e.g. Ford Mustang under $200,000" required=""/>
+      <button class="btn btn-primary">
+       Save Search
+      </button>
+     </form>
+     <div id="buyer-saved">
+     </div>
+    </section>
+    <section class="crud-panel">
+     <h2>
+      My Orders
+     </h2>
+     <div id="buyer-orders">
+     </div>
+     <a class="btn btn-outline-dark" href="cars.html">
+      Continue browsing
+     </a>
+    </section>
+   </div>
+  </main>
+  <footer class="site-footer">
+   <div class="container">
+    <p>
+     ©
+     <span id="current-year">
+     </span>
+     Vintage Rides. All rights reserved.
+    </p>
+    <p>
+     Classic cars. Trusted journeys.
+    </p>
+   </div>
+  </footer>
+  <script src="script.js">
+  </script>
+  <script src="feature-ui.js">
+  </script>
+ </body>
+</html>
